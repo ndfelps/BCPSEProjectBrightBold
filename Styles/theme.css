@@ -1,0 +1,561 @@
+@import url(//fonts.googleapis.com/css?family=Old+Standard+TT:400,700);
+/**
+ *   Bigcommerce Blueprint with Less
+ *   – For the Less variables and functions that you don't want available in the Style Editor, declare them in this file.
+ */
+/**
+ *   CSS Assignments
+ */
+/**
+ *   Bigcommerce Blueprint with Less
+ *
+ *   For compatability with the Bigcommerce Style Editor:
+ *    + Import your Google fonts first
+ *
+ *    + Declare your fonts for use in the editor by using '@font-declaration' (JSON format)
+ *      eg @font-declaration: '{ "Open Sans":["Open Sans","Arial","sans-serif"], "Freckle Face":["Freckle Face","cursive"] }'
+ *
+ *    + Declare your color palette for use in the editor by using '@color-declaration'
+ *      eg @color-declaration: '["#333", "#1399BE", "#EDEDED", "#FFF"]';
+ *
+ *    + Create sections in the editor by wrapping variables in a comment of "! @section: [SectionName]"
+ *      and ending them with a comment of "! @endsection"
+ */
+/**
+ *   Import Google Fonts
+ */
+/**
+ *   Declarations
+ */
+.header {
+  background: #b52863;
+}
+#LogoContainer h1 a {
+  color: #ffffff;
+}
+#LogoContainer h1 a:hover {
+  color: #12a9bf;
+}
+#Header .PageMenu .sf-menu > li > a,
+#Header .PageMenu .sf-menu > li > a::before {
+  color: #ffffff;
+}
+.PageMenu li a::after,
+.SideCategoryListClassic .category-list li a::after {
+  background: #12a9bf !important;
+}
+.PageMenu li ul {
+  background: #f0efed;
+}
+.PageMenu li ul:before {
+  border-color: transparent transparent #f0efed transparent;
+}
+.PageMenu li ul li a,
+.SubCategoryList li a {
+  color: #b52863;
+}
+.SideCategoryListClassic li a {
+  color: #ffffff;
+}
+#SearchForm input.Textbox {
+  background-color: #ffffff;
+}
+#SearchForm {
+  background-color: rgba(248, 248, 248, 0.95);
+}
+.slide-button .btn {
+  color: #b52863;
+  border-color: #b52863;
+  background-color: #b52863;
+}
+.slide-button .btn:hover {
+  border-color: #12a9bf;
+  background-color: #12a9bf;
+  color: #fff;
+}
+.TopMenu {
+  background: #12a9bf;
+  color: #49d9ee;
+}
+.TopMenu a:hover {
+  color: #e27ba6;
+}
+.TopMenu .CartBorder {
+  border: none;
+}
+.TopMenu li .icon {
+  color: #ffffff;
+}
+.main .inner {
+  background: #ffffff;
+}
+.page {
+  background: #ffffff;
+}
+.footer-main {
+  background: #f8f8f8;
+  color: #666666;
+}
+.newsletter-subscription {
+  background: #f8f8f8;
+  color: #666666;
+}
+.footer-links {
+  background: #f8f8f8;
+  color: #666666;
+}
+.footer-links a {
+  color: #666666;
+}
+.footer-links a:hover {
+  color: #12a9bf;
+}
+/* Homepage-specific variables
+
+#HomeFeaturedProducts h3, #HomeNewProducts h3, #SideTopSellers h3 {
+    color: @color-section-headings;
+}*/
+#home .ProductList .ProductDetails a {
+  color: #666666;
+}
+#home .ProductList .p-price {
+  color: #666666;
+}
+#home .ProductList .btn {
+  background-color: #ffffff;
+  border-color: #b52863;
+  color: #b52863;
+}
+#home .ProductList .btn:hover {
+  background-color: #b52863;
+  color: #ffffff;
+}
+/* Product page specific variables */
+#ProductDetails h1 {
+  color: #b52863;
+}
+#prodAccordion .subtitle {
+  color: #666666;
+}
+#prodAccordion .ProductDescriptionContainer,
+.ProductDetailsGrid.ProductAddToCart {
+  color: #666666;
+}
+.productAddToCartRight .add-to-cart.strongCta {
+  color: #b52863;
+  border-color: #b52863;
+}
+.productAddToCartRight .add-to-cart.strongCta:hover {
+  background-color: #b52863;
+  color: #ffffff;
+}
+/* Category page specific variables */
+#CategoryHeading .TitleHeading {
+  color: #b52863;
+}
+#CategoryContent .ProductList .pname,
+#CategoryContent .ProductList .p-name a {
+  color: #666666;
+}
+#CategoryContent .ProductList .p-price {
+  color: #666666;
+}
+#CategoryContent .ProductList .ProductActionAdd .btn {
+  color: #b52863;
+  border-color: #b52863;
+}
+#CategoryContent .ProductList .ProductActionAdd .btn:hover {
+  background-color: #b52863;
+  color: #ffffff;
+}
+#CategoryContent .CompareButton .btn {
+  color: #666666;
+  border-color: #f0efed;
+}
+#CategoryContent .CompareButton .btn:hover {
+  background-color: #f0efed;
+  color: #666666;
+}
+/* Footer specific variables */
+.footer-main h4 {
+  color: #666666;
+}
+.footer-main,
+.footer-main a {
+  color: #666666;
+}
+.footer-main a:hover {
+  color: #12a9bf;
+}
+/***************************************/
+body,
+input,
+select,
+textarea,
+input.Textbox,
+input[type="text"],
+#SearchForm input,
+.HorizontalFormContainer dd .selector span,
+.fastCartTop div,
+.list-icon li {
+  color: #666666;
+}
+#ModalContent,
+.ModalContent,
+.CurrencyChooser a span {
+  color: #666666 !important;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Old Standard TT", Georgia, serif;
+  color: #666666;
+}
+h1,
+.h1 {
+  color: #b52863;
+}
+.Left li a.active,
+a:hover,
+a.alt,
+p a,
+a.NextLink,
+.BulkDiscountLink a,
+.currency-converter p span,
+.BlockContent.PageContent a,
+.page-content #LayoutColumn2 a,
+.footer a:hover,
+.Left #SideCategoryList li a:hover,
+.Left .slist li a:hover,
+.Left .afterSideShopByBrand a:hover,
+.Left #GiftCertificatesMenu li a:hover,
+.Left #SideAccountMenu li a:hover,
+.PageMenu li ul li a:hover {
+  color: #12a9bf;
+}
+.recaptchatable a:hover,
+.page-content #LayoutColumn2 a.pname:hover,
+#ModalContent a:hover,
+.ModalContent a:hover {
+  color: #12a9bf !important;
+}
+#ModalContent a,
+.ModalContent a,
+a.alt:hover,
+.page-content #LayoutColumn2 a:hover,
+p a:hover {
+  color: #666666;
+}
+a,
+.header-logo a,
+.Left li li a,
+.Left #SideCategoryList li a,
+.Left .slist li a,
+.Left .afterSideShopByBrand a,
+.Left #GiftCertificatesMenu li a,
+.Left #SideAccountMenu li a,
+.Left #SideCategoryList li li a,
+.Left .slist li li a,
+.TabNav li.Active a,
+.ModalContent h4 a:hover {
+  color: #666666;
+}
+/*#ModalContent a,
+.ModalContent a, {
+    color: @color-links !important;
+}*/
+.page-content #LayoutColumn2 a.pname,
+.recaptchatable a {
+  color: #666666 !important;
+}
+.Left li a.active:hover {
+  border-color: #666666;
+}
+.icon-add:hover {
+  background-color: #666666 !important;
+}
+.multiStep li a {
+  color: #a6a6a6;
+}
+a.alt:hover {
+  background-color: #f0efed;
+  color: #666666;
+}
+.ModalContent .ProductList a.pname:hover {
+  color: #ffffff !important;
+}
+.multiStep li.ActivePage h4 {
+  border-bottom: 4px solid #12a9bf;
+}
+.icon-add {
+  background: #12a9bf url("%%GLOBAL_TPL_PATH%%/images/add.png") no-repeat scroll 50% 50%;
+}
+.btn {
+  background-color: #ffffff;
+  border-color: #b52863;
+  color: #b52863;
+  font-family: "Old Standard TT", Georgia, serif;
+}
+.btn:hover {
+  background-color: #b52863;
+  color: #ffffff;
+}
+.btn.alt {
+  background-color: #ffffff;
+  border-color: #f0efed;
+  color: #666666;
+}
+a.btn.alt {
+  color: #666666;
+}
+.btn.alt:hover {
+  background-color: #f0efed;
+}
+.btn.text {
+  color: #666666;
+}
+.QuickViewBtn {
+  color: #12a9bf !important;
+  border-color: #12a9bf !important;
+  font-family: "Old Standard TT", Georgia, serif !important;
+}
+.AddToWishlistLink .wishlist-button {
+  color: #b52863;
+}
+.productOptionViewProductPickListWithImage td {
+  border-bottom: 1px dotted #e6e6e6;
+}
+.TopMenu li.Flag img.Selected {
+  border: 2px solid #e6e6e6;
+}
+.productOptionViewRectangle .option.selectedValue label {
+  border: 1px solid #b3b3b3 !important;
+}
+.productOptionPickListSwatch .selectedValue .textureContainer,
+.productOptionPickListSwatch .selectedValue .swatchColours {
+  border: 1px solid #e6e6e6 !important;
+  border-color: #404040 !important;
+}
+.productOptionPickListSwatch .textureContainer,
+.productOptionPickListSwatch .swatchColours,
+.productOptionViewRectangle .option label,
+.recaptchatable #recaptcha_response_field,
+.zoomWrapper,
+#ProductDetails .ProductTinyImageList ul li.selected {
+  border: 1px solid #e6e6e6 !important;
+}
+.CurrencyList dd,
+#SearchForm .Button,
+#SearchForm input.Textbox,
+select,
+hr,
+input.Textbox,
+textarea,
+input[type="text"],
+input[type="password"],
+.QuickSearch,
+.SharePublicWishList,
+.ExpressCheckoutBlock .ExpressCheckoutTitle,
+.HowToPay,
+.NotifyMessage,
+.QuickSearchResult .QuickSearchResultImage,
+.CurrencyChooser,
+.selected-currency,
+div.uploader,
+div.selector,
+.recaptchatable {
+  border: 1px solid #e6e6e6;
+}
+.ExpressCheckoutBlockCompleted .ExpressCheckoutCompletedContent,
+div.uploader span.action {
+  border-left: 1px solid #e6e6e6;
+}
+.TitleHeading {
+  border-bottom: 1px solid #e6e6e6;
+}
+.ProductList.List .ProductDetails {
+  border-top: 1px solid #e6e6e6;
+}
+.main > .inner,
+.footer-main > .inner,
+.footer-links > .inner,
+.newsletter-subscription > .inner {
+  max-width: 960px;
+  width: 80%;
+}
+#home .ProductList li,
+.productPage .ProductList li {
+  width: 20%;
+}
+/* Product list */
+.ProductList .ProductDetails a {
+  color: #666666;
+}
+.ProductList em {
+  color: #666666;
+}
+.ProductList .ProductImage a {
+  background-color: #ffffff;
+}
+#SimilarProductsByCustomerViews,
+#SideProductRelated {
+  border-color: #dfdfdf;
+}
+/* Product Details */
+.productAddToCartRight {
+  border-color: #dfdfdf;
+}
+#ProductTabs {
+  border-color: #f0efed;
+}
+.Breadcrumb li a {
+  color: #12a9bf;
+}
+.newslatter .btn {
+  border-color: #f0efed;
+}
+.newslatter .btn:hover {
+  background-color: #f0efed;
+}
+.newsletter-subscription .Textbox {
+  background-color: #ffffff;
+}
+.newsletter-subscription .Textbox:focus {
+  color: #666666;
+}
+.footer-main > .inner,
+.footer-links > .inner {
+  border-color: #dfdfdf;
+}
+.btn.strongCta {
+  background-color: #ffffff;
+  color: #12a9bf;
+  border-color: #12a9bf;
+}
+.btn.strongCta:hover {
+  background-color: #12a9bf;
+  color: #ffffff;
+}
+.btn:hover.ToggleSearchFormLink a {
+  color: #ffffff;
+}
+.AdvancedSearch .AdvancedSearch h3 {
+  border-color: #f0efed;
+}
+.TabNav li.Active a {
+  border-color: #12a9bf;
+}
+.SearchContainer .ProductList li #SearchPage,
+#SearchResultsProduct .ProductList.List li,
+.AdvancedSearch h5 {
+  border-color: #f0efed;
+}
+.jstree-interspire.jstree-focused {
+  background-color: #f8f8f8;
+}
+.shareSlide {
+  background-color: #ffffff;
+  border-color: #f0efed;
+}
+table.CartContents {
+  border-color: #f0efed;
+}
+table.CartContents th.sep {
+  border-color: #ffffff;
+}
+.ExpressCheckoutBlock .ExpressCheckoutTitle span.stepNocnt,
+.ExpressCheckoutBlock.ExpressCheckoutBlockCollapsed .ExpressCheckoutTitle span.stepNocnt {
+  background-color: #12a9bf;
+  color: #ffffff;
+  border-color: #12a9bf;
+}
+.ExpressCheckoutBlock.ExpressCheckoutBlockCollapsed .ExpressCheckoutTitle span.stepNocnt {
+  background-color: #f8f8f8;
+  color: #12a9bf;
+}
+.Left #SideAccountMenu li a:hover,
+#GiftCertificatesMenu .BlockContent ul li a:hover {
+  color: #12a9bf !important;
+}
+/* --- Responsive --- */
+@media screen and (max-width: 1024px) {
+  #home .ProductList li {
+    width: 25% !important;
+  }
+}
+/* 600px */
+@media screen and (max-width: 767px) {
+  #home .ProductList li {
+    width: 50% !important;
+  }
+  #Header {
+    background: #b52863 !important;
+  }
+  #ToggleMenu {
+    background-color: #8b1f4c !important;
+  }
+  #cart-amount,
+  .slide-show .slide-overlay {
+    background: #12a9bf !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .BillingDetails,
+  .ShippingDetails {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+/* 480px */
+@media screen and (max-width: 480px) {
+  #cart-amount .Cart .total {
+    background: #b52863;
+    color: #ffffff;
+  }
+  #cart-amount .Cart .bag-handle {
+    border: 2px solid #b52863;
+  }
+  #home .ProductList li {
+    width: 100%!important;
+  }
+}
+/* --- Faceted Search --- */
+.facet-container {
+  border-top: 1px solid #e6e6e6;
+}
+.facet-container [class^="js-facet-clear"] {
+  color: #cccccc;
+}
+.facet-container [class^="js-facet-clear"]:hover {
+  color: #999999;
+}
+.facet-container .btn-facet-more-options.more {
+  color: #666666;
+}
+.facet-container .btn-facet-more-options.more:hover {
+  color: #666666;
+}
+.facet-container .facet-option:hover {
+  background: #e6e6e6;
+}
+.facet-container .facet-option .facet-option-product-count {
+  color: #cccccc;
+}
+.js-faceted-search-container > [class^='js-facet-']:last-of-type .facet-container {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Fix for THEME-608 */
+.CurrencyList {
+  height: 250px;
+  overflow: scroll;
+}
+ /* end fix */
